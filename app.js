@@ -9,44 +9,10 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_urt71W
 var c = a + b;
 var result = 'The sum of ' + a + ' and ' + b + ' is ' + c + '.'; 
 return[c, result];
-=======
-    var c = a + b;
-    var result = 'The sum of ' + a + ' and ' + b + ' is ' + c + '.';
-    return [c, result];
->>>>>>> .merge_file_kCFtGZ
-=======
-var c = a + b;
-var result = 'The sum of ' + a + ' and ' + b + ' is ' + c + '.'; 
-return[c, result];
->>>>>>> prob1
-=======
-    var c = a + b;
-    var result = 'The sum of ' + a + ' and ' + b + ' is ' + c + '.';
-    return [c, result];
->>>>>>> prob3
-=======
-    var c = a + b;
-    return [c, 'The sum of ' + a + ' and ' + b + ' is ' + c + '.'];
->>>>>>> prob4
-=======
-    var c = a + b;
-    return [c, 'The sum of ' + a + ' and ' + b + ' is ' + c + '.'];
->>>>>>> prob5
-=======
-    var c = a + b;
-    return [c, 'The sum of ' + a + ' and ' + b + ' is ' + c + '.'];
->>>>>>> prob6
 }
-
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
 
@@ -61,32 +27,13 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-<<<<<<< .merge_file_urt71W
+
 function multiply(a, b) { 
     var c = a*b;
     return [c, "The product of " + a + " and " + b + " is " + c + "." ] ;
     }
-=======
-function multiply(a, b) { //eslint-disable-line
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    var c = a*b;
-    return [c, "The product of " + a + " and " + b + " is " + c + "." ] ;
-    }  
-<<<<<<< HEAD
->>>>>>> .merge_file_kCFtGZ
-=======
->>>>>>> prob3
-=======
-=======
->>>>>>> prob5
-=======
->>>>>>> prob6
-    var c = a * b;
-    return [c, "The product of " + a + " and " + b + " is " + c + "."];
-}
->>>>>>> prob4
+
+
 
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
@@ -134,14 +81,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 //eslint-disable-line
-<<<<<<< HEAD
 
 function sumArray(testArray) { //eslint-disable-line
-<<<<<<< HEAD
-    var testArray = [2, 3, 4]; 
-=======
     var testArray = [2, 3, 4];
->>>>>>> prob5
     var firstSum = sum(testArray[0], testArray[1]);
     var secondSum = sum(firstSum[0], testArray[2]);
     return [secondSum[0], "2,3,4 was passed in as an array of numbers, and 9 is their sum."]
@@ -150,18 +92,15 @@ function sumArray(testArray) { //eslint-disable-line
     // Here is the test for sumArray(); uncomment it to run it
 
     // testSumArray(testArray);
-=======
 
 function sumArray(testArray) { //eslint-disable-line
     testArray = [2, 3, 4];
     var resultSum = sum(sum(testArray[0], testArray[1])[0], testArray[2]);
     return [resultSum[0], testArray[0] + ' ' + testArray[1] + ' ' + testArray[2] + ' was passed in as an array of numbers, and ' + resultSum[0] + ' is their sum.']
 }
->>>>>>> prob6
 
     // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
-<<<<<<< HEAD
     /////////////////////////////////////
     /* Problem 5
     Write a function called multiplyArray() that takes an array of numbers as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
@@ -183,7 +122,6 @@ function sumArray(testArray) { //eslint-disable-line
     // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
     // You're done! Submit the link to the repo following the instructions in Canvas. Or, try out the stretch goal below...
-=======
 /////////////////////////////////////
 /* Problem 5
 Write a function called multiplyArray() that takes an array of numbers as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
@@ -196,22 +134,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-<<<<<<< HEAD
     var multArr = [2, 3, 4];
     var firstMulti = multiply(multArr[0], multArr[1]);
     var secondMulti = multiply(firstMulti[0], multArr[2]);
     return [secondMulti[0], "The numbers 2,3,4 have a product of 24."]
-=======
-    multArr = [2, 3, 4];
-    var Multi = multiply(multiply(multArr[0], multArr[1])[0], multArr[2]);
-    return [Multi[0], 'The numbers ' + multArr[0] + ' ' + multArr[1] + ' ' + multArr[2] + ' have a product of ' + Multi[0] + '.']
->>>>>>> prob6
 }
->>>>>>> prob5
-
     // Don't forget to create a new branch for your work on the next question, if you attempt it.
 
-<<<<<<< HEAD
     /////////////////////////////////////
     /* STRETCH GOAL: Problem 6
     Write a function called multiplyAnyArray() that takes an array of numbers of any length as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and concatenates a message using the arguments that were passed into the function:
@@ -223,7 +152,6 @@ function multiplyArray(multArr) { //eslint-disable-line
     This function should be dynamic, accepting an array of any length.
     
     Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyAnyArray() function and see if the test passes.*/
-=======
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
 // You're done! Submit the link to the repo following the instructions in Canvas. Or, try out the stretch goal below...
@@ -241,24 +169,9 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 This function should be dynamic, accepting an array of any length.
  
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyAnyArray() function and see if the test passes.*/
->>>>>>> prob5
-
-<<<<<<< HEAD
 // Write your code here
+   
 var testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    // Write your code here
-    var testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
->>>>>>> prob4
-=======
->>>>>>> prob5
-
-    function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-
-    }
-=======
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 
@@ -284,7 +197,6 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 
     return ('The numbers ' + 'dynamicArray()' + ' have a product of ' + result2[0]);
 }
->>>>>>> prob6
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyAnyArray(testDynamicArray);
