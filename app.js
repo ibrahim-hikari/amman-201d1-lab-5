@@ -12,6 +12,7 @@ function sum(a, b) { //eslint-disable-line
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_urt71W
 var c = a + b;
 var result = 'The sum of ' + a + ' and ' + b + ' is ' + c + '.'; 
@@ -35,6 +36,10 @@ return[c, result];
     var c = a + b;
     return [c, 'The sum of ' + a + ' and ' + b + ' is ' + c + '.'];
 >>>>>>> prob4
+=======
+    var c = a + b;
+    return [c, 'The sum of ' + a + ' and ' + b + ' is ' + c + '.'];
+>>>>>>> prob5
 }
 
 // Here is the test for sum(); uncomment it to run it
@@ -59,6 +64,7 @@ function multiply(a, b) {
 =======
 function multiply(a, b) { //eslint-disable-line
 <<<<<<< HEAD
+<<<<<<< HEAD
     var c = a*b;
     return [c, "The product of " + a + " and " + b + " is " + c + "." ] ;
     }  
@@ -67,6 +73,8 @@ function multiply(a, b) { //eslint-disable-line
 =======
 >>>>>>> prob3
 =======
+=======
+>>>>>>> prob5
     var c = a * b;
     return [c, "The product of " + a + " and " + b + " is " + c + "."];
 }
@@ -120,7 +128,11 @@ Test this function by hand in the console to get it working, and when you think 
 //eslint-disable-line
 
 function sumArray(testArray) { //eslint-disable-line
+<<<<<<< HEAD
     var testArray = [2, 3, 4]; 
+=======
+    var testArray = [2, 3, 4];
+>>>>>>> prob5
     var firstSum = sum(testArray[0], testArray[1]);
     var secondSum = sum(firstSum[0], testArray[2]);
     return [secondSum[0], "2,3,4 was passed in as an array of numbers, and 9 is their sum."]
@@ -132,6 +144,7 @@ function sumArray(testArray) { //eslint-disable-line
 
     // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
+<<<<<<< HEAD
     /////////////////////////////////////
     /* Problem 5
     Write a function called multiplyArray() that takes an array of numbers as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
@@ -153,9 +166,29 @@ function sumArray(testArray) { //eslint-disable-line
     // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
     // You're done! Submit the link to the repo following the instructions in Canvas. Or, try out the stretch goal below...
+=======
+/////////////////////////////////////
+/* Problem 5
+Write a function called multiplyArray() that takes an array of numbers as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
+ 
+"The numbers 2,3,4 have a product of 24."
+ 
+IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To do multiplication, use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this. This function should handle an array containing three elements. However, you may continue to use the + operator for string concatenation.
+ 
+Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
+
+// Write your code here
+function multiplyArray(multArr) { //eslint-disable-line
+    var multArr = [2, 3, 4];
+    var firstMulti = multiply(multArr[0], multArr[1]);
+    var secondMulti = multiply(firstMulti[0], multArr[2]);
+    return [secondMulti[0], "The numbers 2,3,4 have a product of 24."]
+}
+>>>>>>> prob5
 
     // Don't forget to create a new branch for your work on the next question, if you attempt it.
 
+<<<<<<< HEAD
     /////////////////////////////////////
     /* STRETCH GOAL: Problem 6
     Write a function called multiplyAnyArray() that takes an array of numbers of any length as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and concatenates a message using the arguments that were passed into the function:
@@ -167,14 +200,36 @@ function sumArray(testArray) { //eslint-disable-line
     This function should be dynamic, accepting an array of any length.
     
     Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyAnyArray() function and see if the test passes.*/
+=======
+// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
+
+// You're done! Submit the link to the repo following the instructions in Canvas. Or, try out the stretch goal below...
+
+// Don't forget to create a new branch for your work on the next question, if you attempt it.
+
+/////////////////////////////////////
+/* STRETCH GOAL: Problem 6
+Write a function called multiplyAnyArray() that takes an array of numbers of any length as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and concatenates a message using the arguments that were passed into the function:
+ 
+"The numbers 1,2,3,4,5 have a product of 120."
+ 
+IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To do multiplication, use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this. However, you may continue to use the + operator for string concatenation.
+ 
+This function should be dynamic, accepting an array of any length.
+ 
+Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyAnyArray() function and see if the test passes.*/
+>>>>>>> prob5
 
 <<<<<<< HEAD
 // Write your code here
 var testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
+<<<<<<< HEAD
 =======
     // Write your code here
     var testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
 >>>>>>> prob4
+=======
+>>>>>>> prob5
 
     function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 
