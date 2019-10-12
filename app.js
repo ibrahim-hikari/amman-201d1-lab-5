@@ -9,7 +9,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-
+<<<<<<< .merge_file_urt71W
+var c = a + b;
+var result = 'The sum of ' + a + ' and ' + b + ' is ' + c + '.'; 
+return[c, result];
+=======
+    var c = a + b;
+    var result = 'The sum of ' + a + ' and ' + b + ' is ' + c + '.';
+    return [c, result];
+>>>>>>> .merge_file_kCFtGZ
 }
 
 // Here is the test for sum(); uncomment it to run it
@@ -26,9 +34,17 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
+<<<<<<< .merge_file_urt71W
+function multiply(a, b) { 
+    var c = a*b;
+    return [c, "The product of " + a + " and " + b + " is " + c + "." ] ;
+    }
+=======
 function multiply(a, b) { //eslint-disable-line
-
-}
+    var c = a*b;
+    return [c, "The product of " + a + " and " + b + " is " + c + "." ] ;
+    }  
+>>>>>>> .merge_file_kCFtGZ
 
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
@@ -48,9 +64,17 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+    var sumResult1 = sum(a, b);
+    var sumResult2 = sum(sumResult1[0], c);
+    var multiplyResult1 = multiply(a, b);
+    var multiplyResult2 = multiply(multiplyResult1[0], c);
+    var array = [sumResult2[0],
+    multiplyResult2[0],
+    a + ' and ' + b + ' and ' + c + ' sum to ' + sumResult2[0] + '.',
+    'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiplyResult2[0] + '.'];
 
+    return (array);
 }
-
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
 
@@ -116,7 +140,7 @@ This function should be dynamic, accepting an array of any length.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyAnyArray() function and see if the test passes.*/
 
 // Write your code here
-var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
+var testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 
