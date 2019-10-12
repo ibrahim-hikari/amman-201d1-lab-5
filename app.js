@@ -10,6 +10,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_urt71W
 var c = a + b;
 var result = 'The sum of ' + a + ' and ' + b + ' is ' + c + '.'; 
@@ -24,6 +25,11 @@ var c = a + b;
 var result = 'The sum of ' + a + ' and ' + b + ' is ' + c + '.'; 
 return[c, result];
 >>>>>>> prob1
+=======
+    var c = a + b;
+    var result = 'The sum of ' + a + ' and ' + b + ' is ' + c + '.';
+    return [c, result];
+>>>>>>> prob3
 }
 
 // Here is the test for sum(); uncomment it to run it
@@ -50,7 +56,10 @@ function multiply(a, b) { //eslint-disable-line
     var c = a*b;
     return [c, "The product of " + a + " and " + b + " is " + c + "." ] ;
     }  
+<<<<<<< HEAD
 >>>>>>> .merge_file_kCFtGZ
+=======
+>>>>>>> prob3
 
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
